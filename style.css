@@ -1,0 +1,110 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: rgb(243, 243, 243);
+}
+
+section{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+aside, main{
+  width: 50%;
+}
+
+.cellphone{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cellphone img{
+  width: 55%;
+}
+
+/* as duas seções */
+.login, .sign-up{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid rgb(214, 214, 214);
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 75%;
+  background-color: white;
+}
+
+.login #insta-logo{
+  width: 10rem;
+  margin-bottom: 10px;
+}
+.login #foto-perfil{
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+.download{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 75%;
+}
+
+.download h4{
+  margin: 20px 0;
+}
+.download #applestore{
+  width: 8rem;
+}
+
+.download #googlestore{
+  width: 8.725rem;
+}
+
+a{
+  text-decoration: none;
+  color: #268CF1;
+  font-size: 0.875rem;
+}
+
+.login .btn-login{
+  background-color: #268CF1;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.paragrafo{
+  color: #A2A2A0;
+  font-size: 0.85rem;
+}
+
+
+@media(max-width: 650px){
+  section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .cellphone {
+    display: none;
+  }
+
+  main{
+    width: 80%;
+    margin: 0 auto;
+  }
+  .login, .sign-up, .download{
+    width: 100%;
+  }
+}
+
+
+
